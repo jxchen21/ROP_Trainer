@@ -2,9 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+const char admin_password[] = "wellsfargo";
+
 void target(char *password, int password_len, int is_admin)
 {
-    if (is_admin != 1 || strncmp(password, "wellsfargo", password_len) != 0)
+    if (is_admin != 1 || strncmp(password, admin_password, password_len) != 0)
     {
         printf("Authentication required, exiting now...\n");
         return;
@@ -29,5 +31,5 @@ int main(int argc, char *argv[])
 
     vulnerable(argv[1]);
 
-    exit(0);
+    return 0;
 }
