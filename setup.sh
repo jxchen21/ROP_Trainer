@@ -15,4 +15,3 @@ docker run --rm \
            --security-opt seccomp=unconfined \
            -v "${PWD}:/ROP_Trainer" \
            -it "$IMAGE" bash
-

@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 void target(char *password, int password_len, int is_admin)
 {
-    if (strncmp(password, "wellsfargo", password_len) == 0 && is_admin == 1)
+    if (is_admin != 1 || strncmp(password, "wellsfargo", password_len) != 0)
     {
-        printf("Welcome, admin!\n");
+        printf("Authentication required, exiting now...\n");
+        return;
     }
-    return;
+
+    printf("Welcome, admin!\n");
 }
 
 void vulnerable(char *filename)
@@ -26,5 +29,5 @@ int main(int argc, char *argv[])
 
     vulnerable(argv[1]);
 
-    return 0;
+    exit(0);
 }
