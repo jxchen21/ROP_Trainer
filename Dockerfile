@@ -10,4 +10,6 @@ RUN apt-get update && apt-get install -y \
     && pip3 install ROPgadget \
     && rm -rf /var/lib/apt/lists/*
 
+RUN useradd -m -s /bin/bash wf-user
+
 WORKDIR /ROP_Trainer

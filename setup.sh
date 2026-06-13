@@ -14,4 +14,5 @@ docker run --rm \
            --platform "$PLATFORM" \
            --security-opt seccomp=unconfined \
            -v "${PWD}:/ROP_Trainer" \
-           -it "$IMAGE" bash
+           -it "$IMAGE" \
+           bash /ROP_Trainer/privesc_run.sh
