@@ -16,6 +16,4 @@ Simple challenge to familiarize yourself with GDB. Can you return to win() even 
 [GDB Docs](https://visualgdb.com/gdbreference/commands/)
 (Useful commands: disassemble, breakpoint, x command)
 
-Note: To avoid segfault, make sure to explicitly exit() after your exploit. You can find this command somewhere in the existing binaries!
-
-Enjoy!
+Enjoy! Please let me know if any issues arise.
