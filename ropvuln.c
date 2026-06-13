@@ -1,18 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
-const char admin_password[] = "wellsfargo";
-
-void target(char *password, int password_len, int is_admin)
+void win()
 {
-    if (is_admin != 1 || strncmp(password, admin_password, password_len) != 0)
-    {
-        printf("Authentication required, exiting now...\n");
-        return;
-    }
-
-    printf("Welcome, admin!\n");
+    printf("You won!\n");
 }
 
 void vulnerable(char *filename)
