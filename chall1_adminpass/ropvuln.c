@@ -17,7 +17,7 @@ void target(char *password, int password_len, int is_admin)
 
 void vulnerable(char *filename)
 {
-    char buf[64];
+    char buf[16];
     read_input(buf, filename);
 }
 

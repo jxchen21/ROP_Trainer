@@ -8,7 +8,7 @@ void win()
 
 void vulnerable(char *filename)
 {
-    char buf[64];
+    char buf[16];
     read_input(buf, filename);
 }
 

