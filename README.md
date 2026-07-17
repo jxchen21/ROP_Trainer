@@ -31,6 +31,9 @@ This server seems to offer a function for users to open a shell and run commands
 Note 2: This exploit probably will not work from within GDB, when testing make sure to use the raw binary!
 
 [x86 syscall documentation](https://en.wikibooks.org/wiki/X86_Assembly/Interfacing_with_Linux)
-(Hint: Look into the --multibr flag!)
+
+[linux syscall table](https://filippo.io/linux-syscall-table/)
+
+(Hint: Look into the --multibr flag for ROPgadget!)
 
 Enjoy! Please let me know if any issues arise.
